@@ -368,7 +368,26 @@ section {
   color: var(--light-color);
 }
 
+.services .box-container .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--green);
+  z-index: -1;
+  clip-path: circle(9rem at 5% 0%);
+  transition: 0.3s linear;
+}
 
+.services .box-container .box:hover::before {
+  clip-path: circle(100%);
+}
+
+.services .box-container .box:hover > * {
+  color: #fff;
+}
 
 
 
