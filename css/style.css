@@ -42,7 +42,7 @@ body.active {
   --bg-color: #222;
   --border: 1rem solid rgba(0,0,0,0.2);
   --box-shadow: 0.4rem 0.4rem 1rem #111,
-              -0.4rem -0.4rem 1rem #333;
+              -0.4rem -0.4rem 1rem rgb(92, 92, 92);
   --box-shadow-inset: 0.4rem 0.4rem 1rem #111 inset,
               -0.4rem -0.4rem 1rem #333 inset,
 }
@@ -440,7 +440,33 @@ section {
   opacity: 1;
 }
 
+.contact form {
+  margin: 1rem auto;
+  max-width: 70rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
 
+.contact form .box {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  background: none;
+  color: var(--black);
+  font-size: 1.6rem;
+  text-transform: none;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.contact form textarea {
+  height: 20rem;
+}
+
+.contact form .box:focus {
+  box-shadow: var(--box-shadow-inset);
+}
 
 
 
